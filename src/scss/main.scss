@@ -1,0 +1,21 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+@import "accordion";
+@import "nouislider";
+@import "filters";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/hero";
+@import "./components//advantages";
+@import "./components/catalog";
+@import "./components/service";
+@import "./components/about";
+@import "./components/news";
+@import "./components/partners";
+@import "./components/footer";
+@import "./components/products";
+

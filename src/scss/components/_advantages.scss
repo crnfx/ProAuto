@@ -1,0 +1,36 @@
+.advantages {
+   background-color: #0E0E0E;
+
+   &__list {
+      height: 100%;
+   }
+
+   &__item {
+      width: 25%;
+      min-height: 272px;
+      padding: 41px 28px 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+
+   &__item:first-child {
+      background-image: url(../../img/orange-bg.png);
+   }
+
+   &__item svg {
+      margin-bottom: 29px;
+   }
+
+   &__descr {
+      margin: 0;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: var(--white-color);
+   }
+}

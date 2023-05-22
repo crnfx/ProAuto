@@ -1,0 +1,98 @@
+.service {
+   background-image: url(../../img/service-bg.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   .service-gradient {
+      padding: 88px 0 92px 0;
+      background: radial-gradient(24.05% 24.05% at 50% 56.14%, rgba(14, 14, 14, 0.7) 0%, rgba(14, 14, 14, 0.97) 100%);
+   }
+
+   &__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+   }
+
+   &__inner {
+      margin-bottom: 74px;
+      max-width: 892px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+   }
+
+   &__title {
+      width: max-content;
+      margin-bottom: 44px;
+      color: var(--white-color);
+   }
+
+   .h2-title::after {
+      bottom: -8px;
+   }
+
+   &__descr {
+      color: var(--white-color);
+   }
+
+   &__content {
+      display: flex;
+   }
+
+   &__text {
+      padding-left: 181px;
+   }
+
+   &__list {
+      width: 52%;
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__item {
+      padding: 40px 30px 40px 40px;
+      display: flex;
+   }
+
+   &__item:first-child {
+      background-image: url(../../img/service-card-bg.png);
+   }
+
+   &__text {
+      background-size: 115px 105px;
+      background-repeat: no-repeat; 
+   }
+
+   .girl {
+      background-image: url(../../img/girl-icon.png);
+   }
+
+   .accum {
+      background-image: url(../../img/accum-icon.png);
+   }
+
+   .laptop {
+      background-image: url(../../img/laptop-icon.png);
+   }
+
+   &__subtitle {
+      max-width: 286px;
+      margin: 0;
+      margin-bottom: 16px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      color: var(--white-color);
+      text-align: left;
+   }
+
+   &__descr {
+      margin: 0;
+      text-align: left;
+   }
+
+}

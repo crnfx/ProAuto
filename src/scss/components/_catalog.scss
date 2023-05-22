@@ -1,0 +1,122 @@
+.catalog {
+
+   padding: 88px 0;
+   background-image: url(../../img/catalog-bg.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   &__wrapper {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   &__inner {
+      max-width: 892px;
+      text-align: center;
+   }
+
+   &__title {
+      max-width: 790px;
+      margin-bottom: 50px;
+      color: var(--black2-color);
+   }
+   
+   &__descr {
+      margin-bottom: 36px;
+      color: var(--black2-color);
+   }
+
+   &__list {
+      display: grid; 
+      grid-template-columns: 1fr 1fr 1fr; 
+      grid-template-rows: 1fr 1fr; 
+      gap: 20px 20px; 
+   }
+
+   &__item {
+      position: relative;
+      display: flex;
+      padding: 186px 70px 70px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 400px;
+      z-index: 1;
+      cursor: pointer;
+   }
+
+   &__item::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url(../../img/hov-card.png);
+      opacity: 0;
+      visibility: 0;
+      z-index: 2;
+      transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+   }
+
+   &__item:hover  &__text, &__item:hover::before {
+      opacity: 1;
+      visibility: visible;
+   }
+
+   &__text {
+      position: relative;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+      z-index: 5;
+   }
+
+   &__subtitle {
+      margin: 0;
+      margin-bottom: auto;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 30px;
+      text-transform: uppercase;
+      color: var(--white-color);
+      text-align: center;
+   }
+
+   &__btn {
+      margin-top: 10px;
+   }
+
+   .accum {
+      background-image: url(../../img/accum.png);
+   }
+
+   .oil {
+      background-image: url(../../img/oil.png);
+   }
+
+   .polish {
+      background-image: url(../../img/polish.png);
+   }
+
+   .accessory {
+      background-image: url(../../img/accesory.png);
+   }
+
+   .care {
+      background-image: url(../../img/care.png);
+   }
+
+   .parts {
+      background-image: url(../../img/parts.png);
+   }
+
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      <div class="breadcrumbs-container">
+         <div class="container">
+            <ul class="list-reset breadcrumbs-list">
+               <li class="breadcrumbs__item">
+                  <a href="#" class="breadcrumbs__link breadcrumbs__link--main">ГЛАВНАЯ</a>
+               </li>
+               <li class="breadcrumbs__item">
+                <span class="breadcrumbs__arrow">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 4L12 10L8 16" stroke="#C53720" stroke-width="4"/>
+                    </svg>                    
+                </span>
+               </li>
+               <li class="breadcrumbs__item">
+                  <a href="#" class="breadcrumbs__link">КАТАЛОГ</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <section class="catalog">
+        <div class="container">
+          <div class="catalog__wrapper">
+            <div class="catalog__inner">
+              <h2 class="catalog__title h2-title">
+               КАТАЛОГ
+              </h2>
+              <p class="catalog__descr section-descr">
+               Мы предлагаем лучшие цены на продукцию!
+              </p>
+            </div>
+            <ul class="list-reset catalog__list">
+              <li class="catalog__item accum">
+                <div class="catalog__text">
+                  <h3 class="catalog__subtitle">АККУМУЛЯТОРЫ</h3>
+                  <button class="btn-reset catalog__btn main-btn">Заказать онлайн</button>
+                </div>
+              </li>
+              <li class="catalog__item oil">
+                <div class="catalog__text">
+                  <h3 class="catalog__subtitle">СМАЗОЧНЫЕ МАТЕРИАЛЫ</h3>
+                  <button class="btn-reset catalog__btn main-btn">Заказать онлайн</button>
+                </div>
+              </li>
+              <li class="catalog__item polish">
+                <div class="catalog__text">
+                  <h3 class="catalog__subtitle">ПОЛИРОВКА</h3>
+                  <button class="btn-reset catalog__btn main-btn">Заказать онлайн</button>
+                </div>
+              </li>
+              <li class="catalog__item accessory">
+                <div class="catalog__text">
+                  <h3 class="catalog__subtitle">АКСЕССУАРЫ</h3>
+                  <button class="btn-reset catalog__btn main-btn">Заказать онлайн</button>
+                </div>
+              </li>
+              <li class="catalog__item care">
+                <div class="catalog__text">
+                  <h3 class="catalog__subtitle">СРЕДСТВА ДЛЯ УХОДА</h3>
+                  <button class="btn-reset catalog__btn main-btn">Заказать онлайн</button>
+                </div>
+              </li>
+              <li class="catalog__item parts">
+                <div class="catalog__text">
+                  <h3 class="catalog__subtitle">ЗАПАСНЫЕ ЧАСТИ</h3>
+                  <button class="btn-reset catalog__btn main-btn">Заказать онлайн</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    @include('partials/footer.html')
+  </div>
+</body>
+
+</html>

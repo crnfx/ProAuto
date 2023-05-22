@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              НАДЕЖНЫЕ, КАЧЕСТВЕННЫЕ АККУМУЛЯТОРЫ
+            </h1>
+            <a href="#" class="hero__link main-btn">
+              ПЕРЕЙТИ В КАТАЛОГ
+            </a>
+          </div>
+        </div>
+        <div class="swiper mySwiper hero__swiper">
+          <ul class="list-reset swiper-wrapper">
+            <li class="swiper-slide hero__slide"></li>
+            <li class="swiper-slide hero__slide"></li>
+            <li class="swiper-slide hero__slide"></li>
+            <li class="swiper-slide hero__slide"></li>
+          </ul>
+          <div class="swiper-pagination hero__pagination"></div>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="container">
+          <ul class="list-reset advantages__list flex">
+            <li class="advantages__item"><svg width="132" height="81" viewBox="0 0 132 81" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="32.7273" width="85.6552" height="46.2727" stroke="white" stroke-width="4" />
+                <path
+                  d="M93.2414 59.4545H120C125.523 59.4545 130 54.9774 130 49.4546V12C130 6.47715 125.523 2 120 2H50.3448C44.822 2 40.3448 6.47716 40.3448 12V27.1364"
+                  stroke="white" stroke-width="4" />
+                <path
+                  d="M59.8621 55.8636C59.8621 64.1818 53.1284 70.9205 44.8276 70.9205C36.5268 70.9205 29.7931 64.1818 29.7931 55.8636C29.7931 47.5455 36.5268 40.8068 44.8276 40.8068C53.1284 40.8068 59.8621 47.5455 59.8621 55.8636Z"
+                  stroke="white" stroke-opacity="0.5" stroke-width="4" />
+                <path
+                  d="M42.3448 48.8864H46.6136C48.4839 48.8864 50 50.4025 50 52.2727C50 54.143 48.4839 55.6591 46.6136 55.6591H42.3448V48.8864Z"
+                  stroke="white" stroke-width="4" />
+                <rect x="36.7586" y="54.0682" width="7.17241" height="3.59091" fill="white" />
+                <rect x="36.7586" y="59.4545" width="15.2414" height="3.59091" fill="white" />
+                <rect x="40.3448" y="46.8864" width="3.58621" height="18.8523" fill="white" />
+                <path d="M69.0345 39.7045H80.6897V54.0682" stroke="white" stroke-opacity="0.5" stroke-width="4" />
+                <path d="M20.6207 72.0227H8.96552V57.6591" stroke="white" stroke-opacity="0.5" stroke-width="4" />
+                <path d="M8.96551 54.0682V46.8864" stroke="white" stroke-opacity="0.5" stroke-width="4" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M110.276 50.441C108.946 51.583 107.219 52.2727 105.331 52.2727C101.13 52.2727 97.7241 48.8563 97.7241 44.642C97.7241 40.4277 101.13 37.0114 105.331 37.0114C107.219 37.0114 108.946 37.7011 110.276 38.843C111.606 37.7011 113.333 37.0114 115.22 37.0114C119.422 37.0114 122.828 40.4277 122.828 44.642C122.828 48.8563 119.422 52.2727 115.22 52.2727C113.333 52.2727 111.606 51.583 110.276 50.441Z"
+                  fill="white" />
+                <rect x="42.1379" y="11.875" width="86.069" height="4.48864" fill="white" fill-opacity="0.5" />
+                <rect x="42.1379" y="19.9546" width="86.069" height="4.48864" fill="white" fill-opacity="0.5" />
+              </svg>
+              <p class="advantages__descr">Наличный и безналичный расчет</p>
+            </li>
+            <li class="advantages__item"><svg width="90" height="94" viewBox="0 0 90 94" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 40V44C21 46.7614 23.2386 49 26 49H38" stroke="white" stroke-width="4" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M54.2123 54.6686L56.0658 52.5909L57.443 55.0107L61.7382 62.5576L58.2618 64.5361L55.3438 59.4091L47.7191 67.9563L47.743 67.9813L47.6858 68.0431L54.3228 75.6889L51.3022 78.3111L44.952 70.9956L38.1342 78.3588L35.1991 75.6412L42.257 68.0187L33.9346 59.2724L30.7096 64.5848L27.2904 62.509L31.8719 54.9621L33.2285 52.7276L35.0304 54.6213L44.9525 65.0488L54.2123 54.6686Z"
+                  fill="white" fill-opacity="0.5" />
+                <path
+                  d="M11.6565 72.7907C6.01374 78 3.42748 87.5504 3 92H45L29.6107 64C25.8702 64.5426 17.2992 67.5814 11.6565 72.7907Z"
+                  stroke="white" stroke-width="4" />
+                <path
+                  d="M78.3435 72.7907C83.9863 78 86.5725 87.5504 87 92H45L60.3893 64C64.1298 64.5426 72.7008 67.5814 78.3435 72.7907Z"
+                  stroke="white" stroke-width="4" />
+                <path
+                  d="M27.8922 25.8906C27.4559 16.142 35.2417 8 45 8C54.7583 8 62.5441 16.142 62.1078 25.8906L61.3246 43.3897C60.9338 52.1217 53.7407 59 45 59C36.2593 59 29.0662 52.1217 28.6754 43.3897L27.8922 25.8906Z"
+                  stroke="white" stroke-width="4" />
+                <path
+                  d="M27.5 25C27.5 25 31.7884 19.5199 36.8448 18.3243C44.4712 16.5209 44.181 22.6617 55.3448 26.3317C58.078 27.2302 62 27 62 27"
+                  stroke="white" stroke-opacity="0.5" stroke-width="4" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M72.9206 34.1516C73.0182 31.7329 72.2945 29.4714 70.9978 27.6363C70.8176 12.4893 59.3921 0 45 0C30.9108 0 19.6647 11.9691 19.0284 26.6835C17.2618 28.658 16.2315 31.2952 16.3468 34.1516L16.3684 34.688C16.6036 40.5167 21.5193 45.0512 27.3481 44.816L27.1868 40.8193C23.5654 40.9654 20.5113 38.1481 20.3652 34.5268L20.3435 33.9903C20.1974 30.369 23.0147 27.3148 26.6361 27.1687L26.4748 23.1719C25.3751 23.2163 24.3215 23.4273 23.3372 23.7796C25.1745 12.4349 34.2888 4 45 4C55.8103 4 64.9941 12.5918 66.7119 24.0954C65.5117 23.5534 64.1893 23.2283 62.7926 23.1719L62.6314 27.1687C66.2528 27.3148 69.07 30.369 68.9239 33.9903L68.9023 34.5268C68.7561 38.1481 65.702 40.9654 62.0806 40.8193L61.9194 44.816C67.7481 45.0512 72.6638 40.5167 72.899 34.688L72.9206 34.1516Z"
+                  fill="white" />
+                <rect x="38.0026" y="45.8917" width="10.6774" height="6.24404" rx="3.12202"
+                  transform="rotate(0.400125 38.0026 45.8917)" stroke="white" stroke-width="4" />
+                <path d="M67 75C69.0513 75.6875 73.9231 78.85 77 86" stroke="white" stroke-opacity="0.5"
+                  stroke-width="4" />
+              </svg>
+              <p class="advantages__descr">Техническая помощь и консультация</p>
+            </li>
+            <li class="advantages__item"><svg width="80" height="96" viewBox="0 0 80 96" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="39.5" cy="37.5" r="16.5" stroke="white" stroke-opacity="0.5" stroke-width="4" />
+                <path
+                  d="M46.6651 9.33033L47.4706 10.1195L48.5627 9.83879L57.6 7.51589L60.107 16.5039L60.4099 17.5901L61.4961 17.893L70.4841 20.4L68.1612 29.4373L67.8805 30.5294L68.6697 31.3349L75.2 38L68.6697 44.6651L67.8805 45.4706L68.1612 46.5627L70.4841 55.6L61.4961 58.107L60.4099 58.4099L60.107 59.4961L57.6 68.4841L48.5627 66.1612L47.4706 65.8805L46.6651 66.6697L40 73.2L33.3349 66.6697L32.5294 65.8805L31.4373 66.1612L22.4 68.4841L19.893 59.4961L19.5901 58.4099L18.5039 58.107L9.51589 55.6L11.8388 46.5627L12.1195 45.4706L11.3303 44.6651L4.79998 38L11.3303 31.3349L12.1195 30.5294L11.8388 29.4373L9.51589 20.4L18.5039 17.893L19.5901 17.5901L19.893 16.5039L22.4 7.51589L31.4373 9.83879L32.5294 10.1195L33.3349 9.33033L40 2.79998L46.6651 9.33033Z"
+                  stroke="white" stroke-width="4" />
+                <path d="M15.0042 58L4.00618 82.1799L17.1208 81.5075L25.2273 91.8386L30.4508 80.3303" stroke="white"
+                  stroke-width="4" />
+                <path d="M44.5571 68.8221L55.0041 91.8386L63.1106 81.5075L76.2252 82.1799L70.7262 70.0899"
+                  stroke="white" stroke-width="4" />
+              </svg>
+              <p class="advantages__descr">Только качественная и проверенная продукция</p>
+            </li>
+            <li class="advantages__item"><svg width="108" height="90" viewBox="0 0 108 90" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M100 8H98H2H0V10V74V76H2H18V72H4V12H96V72H63H62.1716L61.5858 72.5858L50.5 83.6716L39.4142 72.5858L36.5858 75.4142L49.0858 87.9142L50.5 89.3284L51.9142 87.9142L63.8284 76H98H100V74V10V8Z"
+                  fill="white" />
+                <path d="M11 2H106V69" stroke="white" stroke-opacity="0.5" stroke-width="4" />
+                <circle cx="51.5" cy="42.5" r="20.5" stroke="white" stroke-opacity="0.5" stroke-width="4" />
+                <path d="M41 41.3333L49.4 50L62 37" stroke="white" stroke-width="4" />
+              </svg>
+              <p class="advantages__descr">Мы всегда на связи
+                с 9:00 до 18:00!</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="catalog">
+        <div class="container">
+          <div class="catalog__wrapper">
+            <div class="catalog__inner">
+              <h2 class="catalog__title h2-title">
+                Автотовары: аксессуары, расходники и многое другое
+              </h2>
+              <p class="catalog__descr section-descr">
+                PROAuto - это специализированный интернет магазин востребованных товаров для автомобилей.
+              </p>
+            </div>
+            <ul class="list-reset catalog__list">
+              <li class="catalog__item accum">
+                <div class="catalog__text">
+                  <h3 class="catalog__subtitle">АККУМУЛЯТОРЫ</h3>
+                  <button class="btn-reset catalog__btn main-btn">Заказать онлайн</button>
+                </div>
+              </li>
+              <li class="catalog__item oil">
+                <div class="catalog__text">
+                  <h3 class="catalog__subtitle">СМАЗОЧНЫЕ МАТЕРИАЛЫ</h3>
+                  <button class="btn-reset catalog__btn main-btn">Заказать онлайн</button>
+                </div>
+              </li>
+              <li class="catalog__item polish">
+                <div class="catalog__text">
+                  <h3 class="catalog__subtitle">ПОЛИРОВКА</h3>
+                  <button class="btn-reset catalog__btn main-btn">Заказать онлайн</button>
+                </div>
+              </li>
+              <li class="catalog__item accessory">
+                <div class="catalog__text">
+                  <h3 class="catalog__subtitle">АКСЕССУАРЫ</h3>
+                  <button class="btn-reset catalog__btn main-btn">Заказать онлайн</button>
+                </div>
+              </li>
+              <li class="catalog__item care">
+                <div class="catalog__text">
+                  <h3 class="catalog__subtitle">СРЕДСТВА ДЛЯ УХОДА</h3>
+                  <button class="btn-reset catalog__btn main-btn">Заказать онлайн</button>
+                </div>
+              </li>
+              <li class="catalog__item parts">
+                <div class="catalog__text">
+                  <h3 class="catalog__subtitle">ЗАПАСНЫЕ ЧАСТИ</h3>
+                  <button class="btn-reset catalog__btn main-btn">Заказать онлайн</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="service">
+        <div class="service-gradient">
+          <div class="container">
+            <div class="service__wrapper">
+              <div class="service__inner">
+                <h2 class="service__title h2-title">
+                  УСЛУГИ
+                </h2>
+                <p class="service__descr section-descr">
+                  Менеджеры компании с радостью ответят на ваши вопросы и помогут с выбором продукции.
+                </p>
+              </div>
+              <div class="service__content">
+                <ul class="list-reset service__list">
+                  <li class="service__item">  
+                    <div class="service__text girl">
+                      <h3 class="service__subtitle">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ СПЕЦИАЛИСТА</h3>
+                      <p class="service__descr">Поможем с выбором аккумулятора, моторного масла и аксессуаров для автомобиля под ваши требования. </p>
+                    </div>
+                  </li>
+                  <li class="service__item">
+                    <div class="service__text accum">
+                      <h3 class="service__subtitle">ОБМЕН СТАРОГО АККУМУЛЯТОРА НА НОВЫЙ</h3>
+                      <p class="service__descr">Принесите нам старую АКБ для легкового автомобиля, и мы предоставим Вам скидку на новый аккумулятор!</p>
+                    </div>
+                  </li>
+                  <li class="service__item">
+                    <div class="service__text laptop">
+                      <h3 class="service__subtitle">БЕСПЛАТНАЯ ДИАГНОСТИКА АККУМУЛЯТОРА</h3>
+                      <p class="service__descr">Приезжайте к нам и мы бесплатно проведём диагностику вашего аккумулятора!</p>
+                    </div>
+                  </li>
+                </ul>
+                <img src="img/mechanic.png" alt="Механик">
+              </div>
+              <button class="btn-reset service__btn main-btn">ЗАДАТЬ ВОПРОС</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about-bg">
+          <div class="container">
+            <div class="about__wrapper">
+              <h2 class="about__title h2-title">О КОМПАНИИ</h2>
+            <div class="about__inner">
+              <img src="img/boss.png" alt="Генеральный директор" class="about__boss">
+              <div class="about__company">
+                <p class="about__descr">Машина плохо заводится? Аккумулятор вас подводит? Не проблема! Вам в 
+                  «PRO Auto»! Мы подберём хороший, надёжный, а главное недорогой аккумулятор именно для вашего авто! С 1997 года сеть магазинов «PRO Auto» занимается продажей автомобильных аккумуляторов, масел, расходных материалов, химией 
+                  и аксессуаров.</p>
+                  <button class="btn-reset about__btn main-btn">УЗНАТЬ БОЛЬШЕ</button>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="news">
+        <div class="container">
+          <div class="news__wrapper">
+            <h2 class="news__title h2-title">
+              новости
+            </h2>
+            <ul class="list-reset news__list">
+              <li class="news__item flex">
+                  <a href="#" class="news__link">
+                    <div class="news__img">
+                      <img class="news__image" src="img/proauto-image.png" alt="Про Авто">
+                    </div>
+                    <div class="news__content">
+                      <span class="news__date">
+                        12 февраля 2020 года
+                      </span>
+                      <h3 class="news__subtitle">
+                        У НАС НОВЫЙ ЛОГОТИП И НОВЫЙ САЙТ!
+                      </h3>
+                      <svg width="51" height="20" viewBox="0 0 51 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M43.6709 11.9991L0 11.9991V7.99912L43.6695 7.99912L38.7583 2.72627L41.6853 0L49.7297 8.63673L50.9993 9.99987L49.7297 11.363L41.6853 19.9997L38.7583 17.2735L43.6709 11.9991Z" fill="#C53720"/>
+                        </svg>                        
+                    </div>
+                  </a>
+              </li>
+              <li class="news__item flex">
+                  <a href="#" class="news__link">
+                    <div class="news__img">
+                      <img class="news__image" src="img/varta.png" alt="Varta">
+                    </div>
+                    <div class="news__content">
+                      <span class="news__date">
+                        10 февраля 2020 года
+                      </span>
+                      <h3 class="news__subtitle">
+                        ОБНОВЛЕНИЕ ЛИНЕЙКИ АККУМУЛЯТОРОВ VARTRA 
+                      </h3>
+                      <svg width="51" height="20" viewBox="0 0 51 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M43.6709 11.9991L0 11.9991V7.99912L43.6695 7.99912L38.7583 2.72627L41.6853 0L49.7297 8.63673L50.9993 9.99987L49.7297 11.363L41.6853 19.9997L38.7583 17.2735L43.6709 11.9991Z" fill="#C53720"/>
+                        </svg>                        
+                    </div>
+                  </a>
+              </li>
+              <li class="news__item flex">
+                  <a href="#" class="news__link">
+                    <div class="news__img">
+                      <img class="news__image" src="img/consulting.png" alt="Консультант">
+                    </div>
+                    <div class="news__content">
+                      <span class="news__date">
+                        5 февраля 2020 года
+                      </span>
+                      <h3 class="news__subtitle">
+                        БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ СПЕЦИАЛИСТА ТЕПЕРЬ В РЕЖИМЕ ONLINE
+                      </h3>
+                      <svg width="51" height="20" viewBox="0 0 51 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M43.6709 11.9991L0 11.9991V7.99912L43.6695 7.99912L38.7583 2.72627L41.6853 0L49.7297 8.63673L50.9993 9.99987L49.7297 11.363L41.6853 19.9997L38.7583 17.2735L43.6709 11.9991Z" fill="#C53720"/>
+                        </svg>                        
+                    </div>
+                  </a>
+              </li>
+
+            </ul>
+            <button class="btn-reset news__btn main-btn">ЧИТАТЬ ВСЕ НОВОСТИ</button>
+          </div>
+        </div>
+      </section>
+      <section class="partners">
+        <div class="container">
+          <div class="partners__slider">
+            <div class="swiper mySwiper partners__swiper">
+              <ul class="list-reset swiper-wrapper">
+                <li class="swiper-slide partners__slide">
+                  <a href="#" class="partners__link">
+                    <img src="img/favorit.png" alt="ФАВОРИТ">
+                  </a>               
+                </li>
+                <li class="swiper-slide partners__slide">
+                  <a href="#" class="partners__link">
+                    <img src="img/unix.png" alt="ЮНИКС">
+                  </a>                
+                </li>
+                <li class="swiper-slide partners__slide">
+                  <a href="#" class="partners__link">
+                    <img src="img/accum-world.png" alt="АККУМУЛЯТОРНЫЙ МИР">
+                  </a>                 
+                </li>
+                <li class="swiper-slide partners__slide">
+                  <a href="#" class="partners__link">
+                    <img src="img/maslon.png" alt="МАСЛОН">
+                  </a>                 
+                </li>
+                <li class="swiper-slide partners__slide">
+                  <a href="#" class="partners__link">
+                    <img src="img/binom.png" alt="БИНОМ">
+                  </a>
+                </li>
+                <li class="swiper-slide partners__slide">
+                  <a href="#" class="partners__link">
+                    <img src="img/favorit.png" alt="ФАВОРИТ">
+                  </a>               
+                </li>
+                <li class="swiper-slide partners__slide">
+                  <a href="#" class="partners__link">
+                    <img src="img/unix.png" alt="ЮНИКС">
+                  </a>                
+                </li>
+                <li class="swiper-slide partners__slide">
+                  <a href="#" class="partners__link">
+                    <img src="img/accum-world.png" alt="АККУМУЛЯТОРНЫЙ МИР">
+                  </a>                 
+                </li>
+                <li class="swiper-slide partners__slide">
+                  <a href="#" class="partners__link">
+                    <img src="img/maslon.png" alt="МАСЛОН">
+                  </a>                 
+                </li>
+                <li class="swiper-slide partners__slide">
+                  <a href="#" class="partners__link">
+                    <img src="img/binom.png" alt="БИНОМ">
+                  </a>
+                </li>
+              </ul>
+            </div>
+              <button class="btn-reset swiper-button-next partners__next"><svg width="17" height="32" viewBox="0 0 17 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 2L14 16L2 30" stroke="#C53720" stroke-width="4"/>
+                </svg>
+                </button>
+              <button class="btn-reset swiper-button-prev partners__prev"><svg width="17" height="32" viewBox="0 0 17 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 2L3 16L15 30" stroke="#C53720" stroke-width="4"/>
+                </svg>
+                </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    @include('partials/footer.html')
+  </div>
+</body>
+
+</html>

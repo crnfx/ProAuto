@@ -1,0 +1,73 @@
+.hero {
+
+
+   padding: 155px 0 55px 0;
+   min-height: 715px;
+
+   position: relative;
+
+   &__content {
+      max-width: 600px;
+      position: relative;
+      z-index: 5;
+   }
+
+   &__title {
+      margin: 0;
+      margin-bottom: 52px;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 60px;
+      color: var(--white-color);
+   }
+
+   &__swiper {
+      position: absolute;
+      top: -2px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      min-height: 620px;
+      width: 100%;
+   }
+
+   &__slide {
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+
+
+   &__slide:first-child {
+      background-image: url(../../img/hero-main.png);
+   }
+
+   &__slide:nth-child(2) {
+      background-image: url(../../img/hero-main.png);
+   }
+
+   &__slide:nth-child(3) {
+      background-image: url(../../img/hero-main.png);
+   }
+
+   &__slide:last-child {
+      background-image: url(../../img/hero-main.png);
+   }
+
+   &__pagination {
+      bottom: 55px !important;
+   }
+
+   .swiper-pagination-bullet {
+      margin: 0 12px !important;
+      width: 112px;
+      height: 4px;
+      border-radius: 0;
+      background-color: var(--white-color);
+      opacity: 1;
+   }
+
+   .swiper-pagination-bullet-active {
+      background-color: var(--orange-color);
+   }
+
+}
