@@ -886,12 +886,12 @@
                         <div class="products__view">
                            <span>ВИД:</span>
                            <div class="products__view--btns">
-                              <button class="btn-reset products__view--btn view-grid">1</button>
-                              <button class="btn-reset products__view--btn view-column">2</button>
+                              <button class="btn-reset products__view--btn view-grid"></button>
+                              <button class="btn-reset products__view--btn view-column"></button>
                            </div>
                         </div>
                      </div>
-                     <ul class="list-reset products__list">
+                     <ul class="list-reset products__list card__list">
                         <li class="products__item flex card">
                            <div class="products__img card__img">
                               <img class="products__image card__image" src="img/magnum60.png" alt="MAGNUM">
@@ -901,14 +901,14 @@
                                  MAGNUM 60Ah
                               </h3>
                               <div class="products__price card__price">
-                                 <span class="product__price--old card__price--old">2222 руб.</span>
-                                 <span class="product__price--new card__price--new">3333 руб.</span>
+                                 <span class="product__price--old card__price--old">2900 руб.</span>
+                                 <span class="product__price--new card__price--new">2199 руб.</span>
                               </div>
                               <p class="products__descr card__descr">Цена действительна при сдаче старого аккумулятора аналогичной емкости в лом</p>
                               <div class="product__controls card__controls">
                                  <div class="products__calc card__calc">
                                     <button class="btn-reset product__btn--control card__btn--control btn-minus">-</button>
-                                    <input type="number" disabled value="0">
+                                    <input class="quantity-input" type="number" disabled value="0">
                                     <button class="btn-reset product__btn--control card__btn--control btn-plus">+</button>
                                  </div>
                                  <a href="#" class="products__basket--check card__basket--check"><svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -928,7 +928,190 @@
                               <a href="#" class="products__link card__link main-btn">ПОДРОБНЕЕ</a>
                            </div>
                         </li>
+                        <li class="products__item flex card card__instock">
+                           <span class="instock">В НАЛИЧИИ</span>
+                           <div class="products__img card__img">
+                              <img class="products__image card__image" src="img/magnum60.png" alt="MAGNUM">
+                           </div>
+                           <div class="products__content card__content">
+                              <h3 class="products__subtitle card__subtitle">
+                                 MAGNUM 60Ah
+                              </h3>
+                              <div class="products__price card__price">
+                                 <span class="product__price--old card__price--old">2900 руб.</span>
+                                 <span class="product__price--new card__price--new">2199 руб.</span>
+                              </div>
+                              <p class="products__descr card__descr">Цена действительна при сдаче старого аккумулятора аналогичной емкости в лом</p>
+                              <div class="product__controls card__controls">
+                                 <div class="products__calc card__calc">
+                                    <button class="btn-reset product__btn--control card__btn--control btn-minus">-</button>
+                                    <input class="quantity-input" type="number" disabled value="0">
+                                    <button class="btn-reset product__btn--control card__btn--control btn-plus">+</button>
+                                 </div>
+                                 <a href="#" class="products__basket--check card__basket--check"><svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2" y="2" width="40" height="40" fill="white"/>
+                                    <path d="M32 13L29.1035 23H16" stroke="#C53720" stroke-width="2"/>
+                                    <path d="M17 12L17 23.6667" stroke="#C53720" stroke-width="2"/>
+                                    <path d="M17 13L12 13" stroke="#C53720" stroke-width="2"/>
+                                    <circle cx="26.4002" cy="28.8" r="2.2" stroke="#C53720" stroke-width="2"/>
+                                    <circle cx="19.2" cy="28.8" r="2.2" stroke="#C53720" stroke-width="2"/>
+                                    <path d="M21 15L27 15" stroke="#C53720" stroke-width="2"/>
+                                    <path d="M24 18V12" stroke="#C53720" stroke-width="2"/>
+                                    <rect x="2" y="2" width="40" height="40" stroke="#C53720" stroke-width="4"/>
+                                    </svg>
+                                    </a>
+                              </div>
 
+                              <a href="#" class="products__link card__link main-btn">ПОДРОБНЕЕ</a>
+                           </div>
+                        </li>
+                        <li class="products__item flex card card__order">
+                           <span class="order">ПОД ЗАКАЗ</span>
+                           <div class="products__img card__img">
+                              <img class="products__image card__image" src="img/magnum60.png" alt="MAGNUM">
+                           </div>
+                           <div class="products__content card__content">
+                              <h3 class="products__subtitle card__subtitle">
+                                 MAGNUM 60Ah
+                              </h3>
+                              <div class="products__price card__price">
+                                 <span class="product__price--old card__price--old">2900 руб.</span>
+                                 <span class="product__price--new card__price--new">2199 руб.</span>
+                              </div>
+                              <p class="products__descr card__descr">Цена действительна при сдаче старого аккумулятора аналогичной емкости в лом</p>
+                              <div class="product__controls card__controls">
+                                 <div class="products__calc card__calc">
+                                    <button class="btn-reset product__btn--control card__btn--control btn-minus">-</button>
+                                    <input class="quantity-input" type="number" disabled value="0">
+                                    <button class="btn-reset product__btn--control card__btn--control btn-plus">+</button>
+                                 </div>
+                                 <a href="#" class="products__basket--check card__basket--check"><svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2" y="2" width="40" height="40" fill="white"/>
+                                    <path d="M32 13L29.1035 23H16" stroke="#C53720" stroke-width="2"/>
+                                    <path d="M17 12L17 23.6667" stroke="#C53720" stroke-width="2"/>
+                                    <path d="M17 13L12 13" stroke="#C53720" stroke-width="2"/>
+                                    <circle cx="26.4002" cy="28.8" r="2.2" stroke="#C53720" stroke-width="2"/>
+                                    <circle cx="19.2" cy="28.8" r="2.2" stroke="#C53720" stroke-width="2"/>
+                                    <path d="M21 15L27 15" stroke="#C53720" stroke-width="2"/>
+                                    <path d="M24 18V12" stroke="#C53720" stroke-width="2"/>
+                                    <rect x="2" y="2" width="40" height="40" stroke="#C53720" stroke-width="4"/>
+                                    </svg>
+                                    </a>
+                              </div>
+
+                              <a href="#" class="products__link card__link main-btn">ПОДРОБНЕЕ</a>
+                           </div>
+                        </li>
+                        <li class="products__item flex card">
+                           <div class="products__img card__img">
+                              <img class="products__image card__image" src="img/magnum60.png" alt="MAGNUM">
+                           </div>
+                           <div class="products__content card__content">
+                              <h3 class="products__subtitle card__subtitle">
+                                 MAGNUM 60Ah
+                              </h3>
+                              <div class="products__price card__price">
+                                 <span class="product__price--old card__price--old">2900 руб.</span>
+                                 <span class="product__price--new card__price--new">2199 руб.</span>
+                              </div>
+                              <p class="products__descr card__descr">Цена действительна при сдаче старого аккумулятора аналогичной емкости в лом</p>
+                              <div class="product__controls card__controls">
+                                 <div class="products__calc card__calc">
+                                    <button class="btn-reset product__btn--control card__btn--control btn-minus">-</button>
+                                    <input class="quantity-input" type="number" disabled value="0">
+                                    <button class="btn-reset product__btn--control card__btn--control btn-plus">+</button>
+                                 </div>
+                                 <a href="#" class="products__basket--check card__basket--check"><svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2" y="2" width="40" height="40" fill="white"/>
+                                    <path d="M32 13L29.1035 23H16" stroke="#C53720" stroke-width="2"/>
+                                    <path d="M17 12L17 23.6667" stroke="#C53720" stroke-width="2"/>
+                                    <path d="M17 13L12 13" stroke="#C53720" stroke-width="2"/>
+                                    <circle cx="26.4002" cy="28.8" r="2.2" stroke="#C53720" stroke-width="2"/>
+                                    <circle cx="19.2" cy="28.8" r="2.2" stroke="#C53720" stroke-width="2"/>
+                                    <path d="M21 15L27 15" stroke="#C53720" stroke-width="2"/>
+                                    <path d="M24 18V12" stroke="#C53720" stroke-width="2"/>
+                                    <rect x="2" y="2" width="40" height="40" stroke="#C53720" stroke-width="4"/>
+                                    </svg>
+                                    </a>
+                              </div>
+
+                              <a href="#" class="products__link card__link main-btn">ПОДРОБНЕЕ</a>
+                           </div>
+                        </li>
+                        <li class="products__item flex card card__instock">
+                           <span class="instock">В НАЛИЧИИ</span>
+                           <div class="products__img card__img">
+                              <img class="products__image card__image" src="img/magnum60.png" alt="MAGNUM">
+                           </div>
+                           <div class="products__content card__content">
+                              <h3 class="products__subtitle card__subtitle">
+                                 MAGNUM 60Ah
+                              </h3>
+                              <div class="products__price card__price">
+                                 <span class="product__price--old card__price--old">2900 руб.</span>
+                                 <span class="product__price--new card__price--new">2199 руб.</span>
+                              </div>
+                              <p class="products__descr card__descr">Цена действительна при сдаче старого аккумулятора аналогичной емкости в лом</p>
+                              <div class="product__controls card__controls">
+                                 <div class="products__calc card__calc">
+                                    <button class="btn-reset product__btn--control card__btn--control btn-minus">-</button>
+                                    <input class="quantity-input" type="number" disabled value="0">
+                                    <button class="btn-reset product__btn--control card__btn--control btn-plus">+</button>
+                                 </div>
+                                 <a href="#" class="products__basket--check card__basket--check"><svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2" y="2" width="40" height="40" fill="white"/>
+                                    <path d="M32 13L29.1035 23H16" stroke="#C53720" stroke-width="2"/>
+                                    <path d="M17 12L17 23.6667" stroke="#C53720" stroke-width="2"/>
+                                    <path d="M17 13L12 13" stroke="#C53720" stroke-width="2"/>
+                                    <circle cx="26.4002" cy="28.8" r="2.2" stroke="#C53720" stroke-width="2"/>
+                                    <circle cx="19.2" cy="28.8" r="2.2" stroke="#C53720" stroke-width="2"/>
+                                    <path d="M21 15L27 15" stroke="#C53720" stroke-width="2"/>
+                                    <path d="M24 18V12" stroke="#C53720" stroke-width="2"/>
+                                    <rect x="2" y="2" width="40" height="40" stroke="#C53720" stroke-width="4"/>
+                                    </svg>
+                                    </a>
+                              </div>
+
+                              <a href="#" class="products__link card__link main-btn">ПОДРОБНЕЕ</a>
+                           </div>
+                        </li>
+                        <li class="products__item flex card card__order">
+                           <span class="order">ПОД ЗАКАЗ</span>
+                           <div class="products__img card__img">
+                              <img class="products__image card__image" src="img/magnum60.png" alt="MAGNUM">
+                           </div>
+                           <div class="products__content card__content">
+                              <h3 class="products__subtitle card__subtitle">
+                                 MAGNUM 60Ah
+                              </h3>
+                              <div class="products__price card__price">
+                                 <span class="product__price--old card__price--old">2900 руб.</span>
+                                 <span class="product__price--new card__price--new">2199 руб.</span>
+                              </div>
+                              <p class="products__descr card__descr">Цена действительна при сдаче старого аккумулятора аналогичной емкости в лом</p>
+                              <div class="product__controls card__controls">
+                                 <div class="products__calc card__calc">
+                                    <button class="btn-reset product__btn--control card__btn--control btn-minus">-</button>
+                                    <input class="quantity-input" type="number" disabled value="0">
+                                    <button class="btn-reset product__btn--control card__btn--control btn-plus">+</button>
+                                 </div>
+                                 <a href="#" class="products__basket--check card__basket--check"><svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2" y="2" width="40" height="40" fill="white"/>
+                                    <path d="M32 13L29.1035 23H16" stroke="#C53720" stroke-width="2"/>
+                                    <path d="M17 12L17 23.6667" stroke="#C53720" stroke-width="2"/>
+                                    <path d="M17 13L12 13" stroke="#C53720" stroke-width="2"/>
+                                    <circle cx="26.4002" cy="28.8" r="2.2" stroke="#C53720" stroke-width="2"/>
+                                    <circle cx="19.2" cy="28.8" r="2.2" stroke="#C53720" stroke-width="2"/>
+                                    <path d="M21 15L27 15" stroke="#C53720" stroke-width="2"/>
+                                    <path d="M24 18V12" stroke="#C53720" stroke-width="2"/>
+                                    <rect x="2" y="2" width="40" height="40" stroke="#C53720" stroke-width="4"/>
+                                    </svg>
+                                    </a>
+                              </div>
+
+                              <a href="#" class="products__link card__link main-btn">ПОДРОБНЕЕ</a>
+                           </div>
+                        </li>
                      </ul>
                   </div>
                </div>

@@ -1642,6 +1642,9 @@ input[type=number] {
   max-width: 264px;
   margin-right: 24px;
 }
+.products__inner {
+  width: 100%;
+}
 .products__title {
   margin: 0;
   margin-bottom: 48px;
@@ -1840,12 +1843,102 @@ input[type=number] {
 .products__link--advantages svg {
   margin-right: 8px;
 }
+.products__view {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+.products__view span {
+  display: block;
+  margin-right: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--black2-color);
+}
+.products__view--btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 96px;
+  height: 40px;
+}
+.products__view--btn {
+  width: 50%;
+  height: 100%;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+.products .view-grid {
+  background-color: var(--orange-color);
+  background-image: url(../../img/dots.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+.products .view-grid:hover {
+  background-color: var(--black2-color);
+}
+.products .view-column {
+  border-top: 4px solid var(--orange-color);
+  border-right: 4px solid var(--orange-color);
+  border-bottom: 4px solid var(--orange-color);
+  background-image: url(../../img/lines.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+.products .view-column:hover {
+  background-color: var(--orange-color);
+}
 
 .card {
   border: 4px solid #A5A5A5;
+  position: relative;
+}
+.card__instock {
+  border: 4px solid #3CC051;
+}
+.card__order {
+  border: 4px solid var(--orange-color);
+}
+.card .instock, .card .order {
+  position: absolute;
+  width: 88px;
+  height: 28px;
+  top: -1px;
+  right: -1px;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 24px;
+  color: var(--white-color);
+  text-align: center;
+}
+.card .instock {
+  background-color: #3CC051;
+}
+.card .order {
+  background-color: var(--orange-color);
+}
+.card__list {
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.card__img {
+  padding: 44px;
 }
 .card__content {
-  background-color: white;
+  background-color: var(--white-color);
 }
 .card__subtitle {
   margin: 0;

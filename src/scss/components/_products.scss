@@ -13,6 +13,10 @@
       margin-right: 24px;
    }
 
+   &__inner {
+      width: 100%;
+   }
+
    &__title {
       margin: 0;
       margin-bottom: 48px;
@@ -204,5 +208,57 @@
       margin-right: 8px;
    }
 
+   &__view {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+   }
 
+   &__view span {
+      display: block;
+      margin-right: 20px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: var(--black2-color);
+   }
+
+   &__view--btns {
+      display: flex;
+      width: 96px;
+      height: 40px;
+   }
+
+   &__view--btn {
+      width: 50%;
+      height: 100%;
+      transition: background-color 0.2s ease-in-out;
+   }
+
+   .view-grid {
+      background-color: var(--orange-color);
+      background-image: url(../../img/dots.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: auto;
+   }
+
+   .view-grid:hover {
+      background-color: var(--black2-color);
+   }
+
+   .view-column {
+      border-top: 4px solid var(--orange-color);
+      border-right: 4px solid var(--orange-color);
+      border-bottom: 4px solid var(--orange-color);
+      background-image: url(../../img/lines.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: auto;
+   }
+
+   .view-column:hover {
+      background-color: var(--orange-color);
+   }
 }
